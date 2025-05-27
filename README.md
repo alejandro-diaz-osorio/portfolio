@@ -6,7 +6,6 @@ Este es mi portafolio personal desarrollado con [Astro](https://astro.build/). A
 
 - Astro
 - HTML, CSS, JavaScript
-- VS Code
 
 ## 📦 Instalación y ejecución local
 

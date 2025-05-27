@@ -1,0 +1,32 @@
+---
+const education = [
+    {
+        school: "University of Example",
+        degree: "B.Sc. in Computer Science",
+        period: "2018 - 2022",
+        description: "Focused on software engineering, algorithms, and web development. Graduated with honors.",
+    },
+    {
+        school: "Example High School",
+        degree: "High School Diploma",
+        period: "2014 - 2018",
+        description: "Specialized in science and mathematics.",
+    },
+];
+---
+
+<section class="py-12 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800">Education</h2>
+        <ul class="space-y-8">
+            {education.map((edu) => (
+                <li class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-gray-900">{edu.school}</h3>
+                    <p class="text-gray-700">{edu.degree}</p>
+                    <span class="text-sm text-gray-500">{edu.period}</span>
+                    <p class="mt-2 text-gray-600">{edu.description}</p>
+                </li>
+            ))}
+        </ul>
+    </div>
+</section>
