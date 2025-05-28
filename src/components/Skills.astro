@@ -1,24 +1,48 @@
 ---
 const skills = [
-    { name: "JavaScript", level: "Advanced" },
-    { name: "TypeScript", level: "Intermediate" },
-    { name: "Astro", level: "Intermediate" },
-    { name: "React", level: "Advanced" },
-    { name: "Tailwind CSS", level: "Advanced" },
-    { name: "Node.js", level: "Intermediate" },
+  /* Web */
+  { name: "HTML", level: "Intermedio", logo: "/logos/html.png" },
+  { name: "CSS", level: "Básico", logo: "/logos/css.png" },
+  { name: "JavaScript", level: "Intermedio", logo: "/logos/javascript.png" },
+
+  /* Frameworks */
+  { name: "Astro", level: "Básico", logo: "/logos/astro.png" },
+  { name: "React", level: "Intermedio", logo: "/logos/react.png" },
+  { name: "Tailwind CSS", level: "Básico", logo: "/logos/tailwind.png" },
+
+  /* Lenguajes */
+  { name: "Python", level: "Intermedio", logo: "/logos/python.png" },
+  { name: "PHP", level: "Básico", logo: "/logos/php.png" },
+  { name: "MySQL", level: "Intermedio", logo: "/logos/mysql.png" },
+
+  /* Electrónica */
+  { name: "Arduino", level: "Intermedio", logo: "/logos/arduino.png" },
+  { name: "ESP32", level: "Intermedio", logo: "/logos/esp32.png" },
+
+  /* Redes */
+  { name: "Cisco Packet Tracer", level: "Básico", logo: "/logos/cisco.png" },
 ];
 ---
 
-<section class="py-12 bg-golden-yellow px-4 rounded-lg shadow-xl max-w-5xl mx-auto mt-1">
-    <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-gray-800">Skills</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {skills.map(skill => (
-                <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
-                    <span class="text-xl font-semibold text-gray-700">{skill.name}</span>
-                    <span class="mt-2 text-sm text-gray-500">{skill.level}</span>
-                </div>
-            ))}
-        </div>
+<section
+  class="py-12 bg-golden-yellow px-4 rounded-lg shadow-xl max-w-5xl mx-auto mt-1"
+>
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">Skills</h2>
+    <div
+      class="bg-honey-yellow grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-5 px-5 rounded-lg shadow-lg"
+    >
+      {
+        skills.map((skill) => (
+          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <span class="text-xl font-semibold text-gray-700">
+              {skill.name}
+            </span>
+            <img src={skill.logo} alt={skill.name} class="w-32 h-32" />
+            <span class="mt-2 text-sm text-gray-500">{skill.level}</span>
+          </div>
+        ))
+      }
     </div>
+  </div>
 </section>
