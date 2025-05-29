@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-/* 
-#8FB8D7
-#CDFFAC
-#FFF695
-#F07B64
-#AA78B3
-*/
 @theme {
   /* Colores azules */
   --color-blue-breeze: #94bcd9;
