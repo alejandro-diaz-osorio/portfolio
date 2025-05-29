@@ -1,8 +1,10 @@
----
 # Portafolio Personal — Alejandro Díaz Osorio ⚡
+
+---
 
 Bienvenido a mi portafolio personal, desarrollado con [Astro](https://astro.build/).
 Aquí comparto mis proyectos más destacados, habilidades técnicas y formas de contacto profesional.
+
 ---
 
 ## 🖼️ Vista previa
@@ -56,4 +58,3 @@ El sitio estará disponible en `http://localhost:4321` (o el puerto que indique 
 🔗 [LinkedIn](https://www.linkedin.com/in/alejandro-diaz-osorio) • [X](https://x.com/AlejoLives)
 
 ---
-
