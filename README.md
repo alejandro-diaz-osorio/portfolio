@@ -7,9 +7,7 @@ Aquí comparto mis proyectos más destacados, habilidades técnicas y formas de 
 
 ## 🖼️ Vista previa
 
-![Vista previa del portafolio](./public/profile.jpg)
-
-> 💡 Si no se muestra la imagen, asegúrate de que el archivo `preview.png` exista y esté en la ruta correcta (`public/` o ajusta la ruta según sea necesario).
+![Vista previa del portafolio](./public/projects/AlarmaAntirrobo.jpg)
 
 ---
 
