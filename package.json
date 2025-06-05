@@ -1,5 +1,12 @@
 {
   "name": "portfolio-ado",
+  "description": "A portfolio",
+  "author": "Alejandro Díaz Osorio",
+  "keywords": [
+    "portfolio",
+    "astro",
+    "tailwindcss"
+  ],
   "type": "module",
   "version": "0.0.1",
   "scripts": {
