@@ -1,5 +1,6 @@
 ---
 const currentYear = new Date().getFullYear();
+import { Icon } from "astro-icon/components";
 ---
 
 <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
@@ -18,28 +19,21 @@ const currentYear = new Date().getFullYear();
         class="hover:text-white transition-colors"
         aria-label="GitHub"
       >
+        <Icon name="mdi:github" class="w-7 h-7" />
       </a>
       <a
         href="mailto:youremail@example.com"
         class="hover:text-white transition-colors"
         aria-label="Email"
       >
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
-          ><path
-            d="M2.01 4.99A2 2 0 0 1 4 3h16a2 2 0 0 1 2 1.99v14.02A2 2 0 0 1 20 21H4a2 2 0 0 1-1.99-2V4.99zm2.2.01l7.79 6.99 7.79-6.99H4.21zM20 19V7.24l-7.4 6.63a1 1 0 0 1-1.2 0L4 7.24V19h16z"
-          ></path></svg
-        >
+        <Icon name="mdi:email" class="w-7 h-7" />
       </a>
       <a
         href="https://linkedin.com/in/yourusername"
         class="hover:text-white transition-colors"
         aria-label="LinkedIn"
       >
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
-          ><path
-            d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v4.71z"
-          ></path></svg
-        >
+        <Icon name="mdi:linkedin" class="w-7 h-7" />
       </a>
     </div>
   </div>

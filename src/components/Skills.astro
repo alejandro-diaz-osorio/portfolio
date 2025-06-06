@@ -34,12 +34,19 @@ const skills = [
     >
       {
         skills.map((skill) => (
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <span class="text-xl font-semibold text-gray-700 underline">
+          <div class="bg-white rounded-lg shadow-lg p-3 flex flex-col items-center hover:shadow-xl transition">
+            <span class="text-xl font-semibold text-gray-700 underline pb-2">
               {skill.name}
             </span>
-            <img src={skill.logo} alt={skill.name} class="w-32 h-32 object-contain" />
-            <span class="mt-2 text-sm text-gray-500">{skill.level}</span>
+            <img
+              loading="lazy"
+              src={skill.logo}
+              alt={skill.name}
+              class="w-32 h-32 object-contain"
+            />
+            <span class="mt-2 text-sm text-gray-500 font-bold">
+              {skill.level}
+            </span>
           </div>
         ))
       }
