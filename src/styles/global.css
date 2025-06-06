@@ -3,57 +3,26 @@
 @theme {
   /* Colores azules */
   --color-blue-breeze: #94bcd9;
-  --color-sky-blue: #80add0;
   --color-mist-blue: #6d9fc6;
-  --color-porcelain-blue: #5a91bc;
   --color-deep-blue: #4874a5;
 
   /* Colores verdes */
   --color-lime-green: #c9f59f;
-  --color-mint-green: #b9ea89;
   --color-soft-green: #a8de74;
-  --color-cream-green: #97d35f;
   --color-vivid-green: #86c74a;
 
   /* Colores amarillos */
   --color-honey-yellow: #ffe673;
-  --color-straw-yellow: #ffdc57;
   --color-golden-yellow: #ffd13b;
-  --color-linen-yellow: #ffc61f;
   --color-sun-yellow: #ffbb00;
 
   /* Colores rojos */
   --color-salmon-red: #f2836d;
-  --color-coral-red: #e96a52;
   --color-rosy-red: #df5137;
-  --color-dusty-red: #d6381d;
   --color-ember-red: #cc2000;
 
   /* Colores morados */
   --color-orchid-purple: #b385c2;
-  --color-lavender-purple: #a470b5;
   --color-misty-purple: #956aa8;
-  --color-cloudy-purple: #86549b;
   --color-dark-purple: #76308f;
-
-  /* Colores marrones */
-  --color-sand-brown: #d6b58c;
-  --color-toast-brown: #c49a6c;
-  --color-caramel-brown: #b2804d;
-  --color-coffee-brown: #a0672f;
-  --color-dark-brown: #804c19;
-
-  /* Colores rosados */
-  --color-baby-pink: #f9a9c3;
-  --color-bubblegum-pink: #f684b0;
-  --color-petal-pink: #f35f9e;
-  --color-candy-pink: #f13a8c;
-  --color-deep-pink: #e21477;
-
-  /* Colores verde azulado */
-  --color-forest-green: #5a9b5a;
-  --color-olive-green: #7b9853;
-  --color-emerald-green: #3fbf7f;
-  --color-jungle-green: #29a07b;
-  --color-deep-forest: #26734d;
 }
