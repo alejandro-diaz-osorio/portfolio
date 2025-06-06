@@ -7,10 +7,9 @@ Aquí encontrarás una selección de mis proyectos más relevantes, y un resumen
 
 ---
 
-<!-- ## 🖼️ Vista previa
+## 🖼️ Vista previa
 
-![Vista previa del portafolio](./public/projects/AlarmaAntirrobo.jpg)
- -->
+![Vista previa del portafolio](./public/web-preview.webp)
 
 ---
 
