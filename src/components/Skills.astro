@@ -1,26 +1,26 @@
 ---
 const skills = [
   /* Web */
-  { name: "HTML", level: "Intermedio", logo: "/logos/html.png" },
-  { name: "CSS", level: "Básico", logo: "/logos/css.png" },
-  { name: "JavaScript", level: "Intermedio", logo: "/logos/javascript.png" },
+  { name: "HTML", level: "Intermedio", logo: "/logos/html.webp" },
+  { name: "CSS", level: "Básico", logo: "/logos/css3.webp" },
+  { name: "JavaScript", level: "Intermedio", logo: "/logos/javascript.webp" },
 
   /* Frameworks */
-  { name: "Astro", level: "Básico", logo: "/logos/astro.png" },
-  { name: "React", level: "Intermedio", logo: "/logos/react.png" },
-  { name: "Tailwind CSS", level: "Básico", logo: "/logos/tailwind.png" },
+  { name: "Astro", level: "Básico", logo: "/logos/astro.webp" },
+  { name: "React", level: "Intermedio", logo: "/logos/react.webp" },
+  { name: "Tailwind CSS", level: "Básico", logo: "/logos/tailwind.webp" },
 
   /* Lenguajes */
-  { name: "Python", level: "Intermedio", logo: "/logos/python.png" },
-  { name: "PHP", level: "Básico", logo: "/logos/php.png" },
-  { name: "MySQL", level: "Intermedio", logo: "/logos/mysql.png" },
+  { name: "Python", level: "Intermedio", logo: "/logos/python.webp" },
+  { name: "PHP", level: "Básico", logo: "/logos/php.webp" },
+  { name: "MySQL", level: "Intermedio", logo: "/logos/mysql.webp" },
 
   /* Electrónica */
-  { name: "Arduino", level: "Intermedio", logo: "/logos/arduino.png" },
-  { name: "ESP32", level: "Intermedio", logo: "/logos/esp32.png" },
+  { name: "Arduino", level: "Básico", logo: "/logos/arduino.webp" },
+  { name: "ESP32", level: "Básico", logo: "/logos/esp32.webp" },
 
   /* Redes */
-  { name: "Cisco Packet Tracer", level: "Básico", logo: "/logos/cisco.png" },
+  { name: "Cisco Packet Tracer", level: "Básico", logo: "/logos/cisco.webp" },
 ];
 ---
 
@@ -35,10 +35,10 @@ const skills = [
       {
         skills.map((skill) => (
           <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <span class="text-xl font-semibold text-gray-700">
+            <span class="text-xl font-semibold text-gray-700 underline">
               {skill.name}
             </span>
-            <img src={skill.logo} alt={skill.name} class="w-32 h-32" />
+            <img src={skill.logo} alt={skill.name} class="w-32 h-32 object-contain" />
             <span class="mt-2 text-sm text-gray-500">{skill.level}</span>
           </div>
         ))
