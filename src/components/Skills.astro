@@ -1,38 +1,42 @@
 ---
 const skills = [
   /* Web */
-  { name: "HTML", level: "Intermedio", logo: "/logos/html.webp" },
-  { name: "CSS", level: "Básico", logo: "/logos/css3.webp" },
-  { name: "JavaScript", level: "Intermedio", logo: "/logos/javascript.webp" },
+  { name: "HTML", level: "Intermedio", logo: "/logos/html.webp", categoria :"web" },
+  { name: "CSS", level: "Básico", logo: "/logos/css3.webp", categoria :"web" },
+  { name: "JavaScript", level: "Intermedio", logo: "/logos/javascript.webp", categoria :"web" },
 
   /* Frameworks */
-  { name: "Astro", level: "Básico", logo: "/logos/astro.webp" },
-  { name: "React", level: "Intermedio", logo: "/logos/react.webp" },
-  { name: "Tailwind CSS", level: "Básico", logo: "/logos/tailwind.webp" },
+  { name: "Astro", level: "Básico", logo: "/logos/astro.webp", categoria :"Frameworks" },
+  { name: "React", level: "Intermedio", logo: "/logos/react.webp", categoria :"Frameworks" },
+  { name: "Tailwind CSS", level: "Básico", logo: "/logos/tailwind.webp", categoria :"Frameworks" },
 
   /* Lenguajes */
-  { name: "Python", level: "Intermedio", logo: "/logos/python.webp" },
-  { name: "PHP", level: "Básico", logo: "/logos/php.webp" },
-  { name: "MySQL", level: "Intermedio", logo: "/logos/mysql.webp" },
+  { name: "Python", level: "Intermedio", logo: "/logos/python.webp", categoria :"lenguajes" },
+  { name: "PHP", level: "Básico", logo: "/logos/php.webp", categoria :"lenguajes" },
+  { name: "MySQL", level: "Intermedio", logo: "/logos/mysql.webp", categoria :"lenguajes" },
+  { name: "C#", level: "Intermedio", logo: "/logos/cs.webp", categoria :"lenguajes" },
 
   /* Electrónica */
-  { name: "Arduino", level: "Básico", logo: "/logos/arduino.webp" },
-  { name: "ESP32", level: "Básico", logo: "/logos/esp32.webp" },
+  { name: "Arduino", level: "Básico", logo: "/logos/arduino.webp", categoria :"electrónica" },
+  { name: "ESP32", level: "Básico", logo: "/logos/esp32.webp", categoria :"electrónica" },
 
   /* Redes */
-  { name: "Cisco Packet Tracer", level: "Básico", logo: "/logos/cisco.webp" },
+  { name: "Cisco Packet Tracer", level: "Básico", logo: "/logos/cisco.webp", categoria :"redes" },
+
+  /* Videojuegos */
+  { name: "Unity", level: "Básico", logo: "/logos/unity.webp", categoria :"videojuegos" },
 ];
 ---
 
-<section class="py-12 bg-golden-yellow px-4 mx-auto">
-  <div class="max-w-4xl mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">Skills</h2>
+<section class="py-12 bg-sun-yellow">
+  <div class="mx-auto px-4 max-w-5xl">
+    <h2 class="text-3xl font-bold mb-6 text-gray-100 text-center">Skills</h2>
     <div
-      class="bg-honey-yellow grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-5 px-5 rounded-lg shadow-lg"
+      class="bg-golden-yellow grid sm:grid-cols-2 md:grid-cols-3 gap-6 py-5 px-5 rounded-lg shadow-lg text-center mx-auto"
     >
       {
         skills.map((skill) => (
-          <div class="bg-white rounded-lg shadow-lg p-3 flex flex-col items-center hover:shadow-xl transition">
+          <div class="bg-white rounded-lg shadow-lg p-3 flex flex-col items-center hover:scale-110 transition-all">
             <span class="text-xl font-semibold text-gray-700 underline pb-2">
               {skill.name}
             </span>
