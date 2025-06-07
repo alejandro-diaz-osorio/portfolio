@@ -29,7 +29,7 @@ const projects = [
 ];
 ---
 
-<section class="py-16 bg-mist-blue px-4 mx-auto">
+<section class="py-16 bg-deep-blue px-4 mx-auto">
   <div class="max-w-5xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-8 text-center">Proyectos realizados</h2>
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -39,15 +39,17 @@ const projects = [
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            class="block bg-blue-breeze rounded-lg shadow hover:shadow-lg transition p-6"
+            class="block bg-mist-blue rounded-lg shadow hover:scale-105 hover:bg-blue-breeze p-6 transition-all"
           >
             <Image
               src={project.image}
-              alt={project.title ?? ""}
+              alt={project.title}
               class="w-full h-40 object-cover rounded-md mb-4"
             />
-            <h3 class="text-xl font-semibold mb-2">{project.title}</h3>
-            <p class="text-primary">{project.description}</p>
+            <h3 class="text-lg font-semibold mb-2 underline text-gray-800 text-center rounded-sm">
+              {project.title}
+            </h3>
+            <p class="text-md text-gray-600">{project.description}</p>
           </a>
         ))
       }
