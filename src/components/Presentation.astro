@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import profile from "../assets/profile.webp";
+---
+
 <section class="py-16 bg-gradient-to-b from-red-900 via-red-700 to-red-600">
   <div
     class="max-w-5xl mx-auto mb-10 p-10 bg-red-800/90 rounded-3xl shadow-2xl shadow-red-900/80 text-center"
@@ -22,9 +27,10 @@
       class="flex justify-center items-center"
       aria-label="LinkedIn profile"
     >
-      <img
-        src="/profile.webp"
+      <Image
+        src={profile}
         alt="Foto de perfil de Alejandro Díaz Osorio"
+        loading="eager"
         class="w-52 h-52 rounded-full object-cover shadow-xl shadow-red-900 border-4 border-red-500 hover:scale-130 hover:shadow-2xl hover:shadow-red-400 hover:rotate-350 transition-all duration-700"
       />
     </a>
