@@ -2,11 +2,10 @@
 import { Image } from "astro:assets";
 import { projects } from "../data/projects";
 ---
-
-<section class="py-16 bg-deep-blue">
+<section class="py-16 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700">
   <div class="max-w-5xl mx-auto px-4 text-center">
     <h2
-      class="mb-4 text-4xl font-bold text-gray-100 bg-blue-breeze rounded-lg p-4 inline-block shadow-lg"
+      class="mb-4 text-4xl font-bold text-white bg-gradient-to-r from-blue-500 via-sky-400 to-cyan-400 rounded-lg p-4 inline-block shadow-xl"
     >
       PROYECTOS REALIZADOS
     </h2>
@@ -17,17 +16,17 @@ import { projects } from "../data/projects";
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            class="block bg-mist-blue rounded-lg shadow hover:scale-105 hover:bg-blue-breeze p-6 transition-all"
+            class="group block bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:ring-4 hover:ring-cyan-300"
           >
             <Image
               src={project.image}
               alt={project.title}
-              class="w-full h-40 object-cover rounded-md mb-4"
+              class="w-full h-40 object-cover rounded-md mb-4 border-2 border-blue-300 shadow group-hover:scale-105 group-hover:border-cyan-400 transition-transform duration-300"
             />
-            <h3 class="text-lg font-semibold mb-2 underline text-gray-800 text-center rounded-sm">
+            <h3 class="text-lg font-semibold mb-2 underline text-blue-900 text-center rounded-sm group-hover:text-cyan-700 transition-colors duration-300">
               {project.title}
             </h3>
-            <p class="text-md text-gray-800 text-left">{project.description}</p>
+            <p class="text-md text-blue-800 text-left group-hover:text-blue-900 transition-colors duration-300">{project.description}</p>
           </a>
         ))
       }

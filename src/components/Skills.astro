@@ -5,14 +5,18 @@ import { skills } from "../data/skills.js";
 const categorias = [...new Set(skills.map((skill) => skill.categoria))];
 ---
 
-<section class="py-12 bg-sun-yellow">
+<section
+  class="py-12 bg-gradient-to-b from-yellow-600 via-yellow-500 to-yellow-400"
+>
   <div class="mx-auto px-4 max-w-5xl text-center">
     <h2
-      class="mb-8 text-4xl font-bold bg-honey-yellow rounded-lg p-4 inline-block shadow-lg"
+      class="mb-8 text-4xl font-bold bg-yellow-600 text-yellow-900 rounded-lg p-4 inline-block shadow-lg border-4 border-yellow-700"
     >
       Skills
     </h2>
-    <div class="bg-golden-yellow grid gap-6 py-5 px-5 rounded-lg shadow-lg text-center mx-auto">
+    <div
+      class="bg-white/80 grid gap-6 py-5 px-5 rounded-xl shadow-xl text-center mx-auto border border-yellow-500"
+    >
       {
         categorias.map((categoria) => {
           const skillsPorCategoria = skills.filter(
@@ -20,22 +24,22 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
           );
           return (
             <div class="mb-12">
-              <h3 class="text-2xl font-bold text-black bg-white px-4 py-2 rounded shadow inline-block mb-6 border-l-8 border-deep-blue">
+              <h3 class="text-2xl font-bold text-yellow-900 bg-yellow-200 px-4 py-2 rounded shadow inline-block mb-6 border-l-8 border-yellow-600">
                 {categoria.charAt(0).toUpperCase() + categoria.slice(1)}
               </h3>
               <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 ">
                 {skillsPorCategoria.map((skill) => (
-                  <div class="rounded-lg shadow-lg p-3 flex flex-col items-center hover:scale-110 transition-all bg-white">
-                    <span class="text-xl font-semibold text-gray-700 underline pb-2">
+                  <div class="rounded-lg shadow-lg p-3 flex flex-col items-center transition-all bg-white border border-yellow-400 hover:bg-yellow-100 hover:shadow-2xl hover:border-yellow-600 hover:-translate-y-2 hover:scale-105 duration-300 cursor-pointer group">
+                    <span class="text-xl font-semibold text-yellow-800 underline pb-2 group-hover:text-yellow-900 transition-colors duration-300">
                       {skill.name}
                     </span>
                     <img
                       loading="lazy"
                       src={skill.logo}
                       alt={skill.name}
-                      class="w-32 h-32 object-contain"
+                      class="w-32 h-32 object-contain group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
                     />
-                    <span class="mt-2 text-sm text-gray-500 font-bold">
+                    <span class="mt-2 text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors duration-300">
                       {skill.level}
                     </span>
                   </div>
