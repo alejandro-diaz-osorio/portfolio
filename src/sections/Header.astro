@@ -1,0 +1,40 @@
+---
+const siteTitle = "Portfolio ADO";
+const navLinks = [
+  { name: "Inicio", href: "/" },
+  { name: "Proyectos", href: "/projects" },
+  { name: "Educación", href: "/education" },
+  { name: "Skills", href: "/skills" },
+  { name: "Sobre mi", href: "/about" },
+];
+---
+
+<header
+  class="bg-gradient-to-r from-[#0f2027] to-[#2c5364] text-white shadow-md py-2"
+>
+  <div
+    class="max-w-5xl mx-auto flex items-center justify-between px-8 flex-col gap-4 md:flex-row md:gap-0"
+  >
+    <h1
+      class="text-3xl font-bold tracking-wider bg-gradient-to-r from-[#43cea2] to-[#185a9d] bg-clip-text text-transparent"
+    >
+      {siteTitle}
+    </h1>
+    <nav>
+      <ul class="flex md:gap-8 gap-4 list-none m-0 p-0">
+        {
+          navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-white font-medium transition-colors duration-200 hover:text-[#43cea2]"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
