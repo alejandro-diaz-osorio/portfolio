@@ -2,22 +2,22 @@
 import { education } from "../data/education.js";
 ---
 
-<section class="py-12 bg-dark-purple">
+<section class="py-12 bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900">
   <div class="max-w-5xl mx-auto px-4 text-center">
     <h2
-      class="mb-4 text-4xl font-bold text-gray-100 bg-orchid-purple rounded-lg p-4 inline-block shadow-lg"
+      class="mb-4 text-4xl font-bold text-white bg-gradient-to-r from-purple-700 via-fuchsia-600 to-indigo-700 rounded-lg p-4 inline-block shadow-lg"
     >
       Educación
     </h2>
     <ul class="space-y-8">
       {
         education.map((edu) => (
-          <li class="bg-misty-purple p-6 rounded-lg text-left shadow hover:scale-105 transition-all">
-            <h3 class="text-xl font-semibold text-gray-900">{edu.degree}</h3>
-            <p class="text-gray-700">{edu.school}</p>
-            <span class="text-sm text-gray-600">{edu.period}</span>
-            <p class="mt-2 text-gray-600">{edu.description}</p>
-          </li>
+            <li class="bg-gradient-to-r from-purple-800 via-fuchsia-800 to-indigo-800 p-6 rounded-lg text-left shadow-lg hover:scale-105 transition-all hover:from-fuchsia-700 hover:via-purple-700 hover:to-indigo-700">
+            <h3 class="text-xl font-semibold text-fuchsia-300">{edu.degree}</h3>
+            <p class="text-indigo-100">{edu.school}</p>
+            <span class="text-sm text-purple-200">{edu.period}</span>
+            <p class="mt-2 text-purple-100">{edu.description}</p>
+            </li>
         ))
       }
     </ul>

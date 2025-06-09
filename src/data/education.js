@@ -4,7 +4,7 @@ export const education = [
     school: "Universidad Católica de Pereira (UCP)",
     period: "2023 - Actualidad",
     description:
-      "Focused on software engineering, algorithms, and web development. Graduated with honors.",
+      "Carrera universitaria de pregrado en Ingeniería de Sistemas y Telecomunicaciones, con enfoque en el desarrollo de software y redes.",
   },
   {
     degree: "Inglés B2",
