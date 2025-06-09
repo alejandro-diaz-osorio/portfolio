@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { skills } from "../data/skills.js";
 
 // Agrupar por categoría
@@ -33,8 +34,7 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
                     <span class="text-xl font-semibold text-yellow-800 underline pb-2 group-hover:text-yellow-900 transition-colors duration-300">
                       {skill.name}
                     </span>
-                    <img
-                      loading="lazy"
+                    <Image
                       src={skill.logo}
                       alt={skill.name}
                       class="w-32 h-32 object-contain group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
