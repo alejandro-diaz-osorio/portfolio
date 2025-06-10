@@ -1,44 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" role="img"
     aria-label="Favicon de estudiante de Ingeniería con colores de Colombia">
-    <!-- Fondo bandera Colombia -->
-    <rect y="0" width="64" height="21" fill="#FFD100" />
-    <rect y="21" width="64" height="21" fill="#0033A0" />
-    <rect y="42" width="64" height="22" fill="#CE1126" />
-
-    <!-- Microchip simplificado con sombra -->
-    <rect x="22" y="22" width="20" height="20" fill="#1DB954" rx="4" ry="4"
-        filter="url(#chipShadow)" />
+    <!-- Círculo de fondo con bandera de Colombia -->
     <defs>
+        <clipPath id="circleClip">
+            <circle cx="32" cy="32" r="32" />
+        </clipPath>
         <filter id="chipShadow" x="0" y="0" width="64" height="64">
             <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.2" />
         </filter>
-    </defs>
-
-    <!-- Patas cortas del chip (más simétricas) -->
-    <g stroke="#1DB954" stroke-width="2">
-        <line x1="18" y1="28" x2="22" y2="28" />
-        <line x1="18" y1="36" x2="22" y2="36" />
-        <line x1="42" y1="28" x2="46" y2="28" />
-        <line x1="42" y1="36" x2="46" y2="36" />
-        <line x1="28" y1="18" x2="28" y2="22" />
-        <line x1="36" y1="18" x2="36" y2="22" />
-        <line x1="28" y1="42" x2="28" y2="46" />
-        <line x1="36" y1="42" x2="36" y2="46" />
-    </g>
-
-    <!-- Detalle de circuito dentro del chip -->
-    <circle cx="32" cy="32" r="5" fill="#fff" opacity="0.7" />
-    <rect x="31" y="27" width="2" height="10" fill="#fff" opacity="0.7" />
-    <rect x="27" y="31" width="10" height="2" fill="#fff" opacity="0.7" />
-
-    <!-- Corchetes simplificados, centrados y con sombra -->
-    <text x="10" y="56" font-family="monospace" font-size="13" fill="#FFF" font-weight="bold"
-        filter="url(#textShadow)">{</text>
-    <text x="46" y="56" font-family="monospace" font-size="13" fill="#FFF" font-weight="bold"
-        filter="url(#textShadow)">}</text>
-    <defs>
         <filter id="textShadow" x="0" y="0" width="64" height="64">
             <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.3" />
         </filter>
     </defs>
+    <g clip-path="url(#circleClip)">
+        <rect y="0" width="64" height="21" fill="#FFD100" />
+        <rect y="21" width="64" height="21" fill="#0033A0" />
+        <rect y="42" width="64" height="22" fill="#CE1126" />
+
+        <!-- Microchip simplificado con sombra -->
+        <rect x="22" y="22" width="20" height="20" fill="#1DB954" rx="4" ry="4"
+            filter="url(#chipShadow)" />
+
+        <!-- Patas cortas del chip (más simétricas) -->
+        <g stroke="#1DB954" stroke-width="2">
+            <line x1="18" y1="28" x2="22" y2="28" />
+            <line x1="18" y1="36" x2="22" y2="36" />
+            <line x1="42" y1="28" x2="46" y2="28" />
+            <line x1="42" y1="36" x2="46" y2="36" />
+            <line x1="28" y1="18" x2="28" y2="22" />
+            <line x1="36" y1="18" x2="36" y2="22" />
+            <line x1="28" y1="42" x2="28" y2="46" />
+            <line x1="36" y1="42" x2="36" y2="46" />
+        </g>
+
+        <!-- Detalle de circuito dentro del chip -->
+        <circle cx="32" cy="32" r="5" fill="#fff" opacity="0.7" />
+        <rect x="31" y="27" width="2" height="10" fill="#fff" opacity="0.7" />
+        <rect x="27" y="31" width="10" height="2" fill="#fff" opacity="0.7" />
+
+        <!-- Corchetes simplificados, centrados y con sombra -->
+        <text x="10" y="56" font-family="monospace" font-size="13" fill="#FFF" font-weight="bold"
+            filter="url(#textShadow)">{</text>
+        <text x="46" y="56" font-family="monospace" font-size="13" fill="#FFF" font-weight="bold"
+            filter="url(#textShadow)">}</text>
+    </g>
+    <!-- Borde circular opcional -->
+    <circle cx="32" cy="32" r="31" fill="none" stroke="#fff" stroke-width="2" />
 </svg>
