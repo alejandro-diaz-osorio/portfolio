@@ -6,9 +6,7 @@ import { skills } from "../data/skills.js";
 const categorias = [...new Set(skills.map((skill) => skill.categoria))];
 ---
 
-<section
-  class="py-12 bg-gradient-to-b from-yellow-600 via-yellow-500 to-yellow-400"
->
+<section class="py-12 bg-gradient-to-b to-[#0f2027] from-[#2c5364]">
   <div class="mx-auto px-4 max-w-5xl text-center">
     <h2
       class="mb-8 text-4xl font-bold bg-yellow-600 text-yellow-900 rounded-lg p-4 inline-block shadow-lg border-4 border-yellow-700"
@@ -37,7 +35,7 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
                     <Image
                       src={skill.logo}
                       alt={skill.name}
-                      class="w-32 h-32 object-contain group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
+                      class="w-32 h-32 aspect-square object-contain group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
                     />
                     <span class="mt-2 text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors duration-300">
                       {skill.level}

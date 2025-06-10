@@ -4,11 +4,11 @@ import { projects } from "../data/projects";
 ---
 
 <section
-  class="py-12 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 flex flex-col items-center justify-center h-screen"
+  class="py-12 bg-gradient-to-b to-[#0f2027] from-[#2c5364] flex flex-col items-center justify-center"
 >
   <div class="max-w-5xl mx-auto px-4 text-center">
     <h2
-      class="mb-4 text-4xl font-bold text-white bg-gradient-to-r from-blue-500 via-sky-400 to-cyan-400 rounded-lg p-4 inline-block shadow-xl"
+      class="mb-4 text-4xl font-bold text-white bg-gradient-to-r from-blue-900 via-blue-500 to-blue-900 rounded-lg p-4 inline-block shadow-xl"
     >
       PROYECTOS REALIZADOS
     </h2>
@@ -19,19 +19,21 @@ import { projects } from "../data/projects";
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            class="group block bg-gradient-to-br from-blue-100 via-sky-100 to-cyan-100 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:ring-4 hover:ring-cyan-300"
+            class="group bg-gradient-to-t from-blue-800 via-blue-400 to-blue-700 p-6 rounded-lg text-left hover:scale-108  hover:to-blue-800 hover:via-blue-400 hover:from-blue-700 transition-all"
           >
-            <Image
-              src={project.image}
-              alt={project.title}
-              class="w-full h-40 object-cover rounded-md mb-4 border-2 border-blue-300 shadow group-hover:scale-105 group-hover:border-cyan-400 transition-transform duration-300"
-            />
-            <h3 class="text-lg font-semibold mb-2 underline text-blue-900 text-center rounded-sm group-hover:text-cyan-700 transition-colors duration-300">
+            <div class="overflow-hidden rounded-md mb-4 border-3 border-gray-500">
+              <Image
+                src={project.image}
+                alt={project.title}
+                class="object-cover aspect-video group-hover:scale-110 transition-all"
+              />
+            </div>
+            <h3 class="text-lg text-center font-bold text-gray-700 group-hover:text-gray-900 group-hover:underline transition-all">
               {project.title}
             </h3>
-            <p class="text-md text-blue-800 text-left group-hover:text-blue-900 transition-colors duration-300">
+            <span class="text-white text-shadow-sm text-shadow-gray-600">
               {project.description}
-            </p>
+            </span>
           </a>
         ))
       }
