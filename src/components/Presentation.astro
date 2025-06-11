@@ -3,24 +3,13 @@ import { Image } from "astro:assets";
 import profile from "../assets/profile.webp";
 
 const phrases = [
-  { sentence: "Desarrollo de software eficiente", emoji: "💻" },
+  { sentence: "Desarrollo de software", emoji: "💻" },
   { sentence: "Integración de hardware y software", emoji: "🔧" },
   { sentence: "Simulación de redes", emoji: "🖥️" },
   { sentence: "Gestión y modelado de Bases de Datos", emoji: "🗄️" },
   { sentence: "Asistencia en programas de Arquitectura y diseño", emoji: "🏛️" },
   { sentence: "Desarrollo de aplicaciones web", emoji: "🌐" },
 ];
-
-const getRandomPhrases = (count = 5) => {
-  const shuffled = [...phrases].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-};
-
-let randomPhrase = getRandomPhrases();
-
-setInterval(() => {
-  randomPhrase = getRandomPhrases();
-}, 1000);
 ---
 
 <section class="py-16 bg-gradient-to-b from-[#0f2027] to-[#2c5364]">
@@ -53,7 +42,7 @@ setInterval(() => {
     </a>
     <ul class="text-red-50 text-lg italic space-y-3 font-semibold text-left">
       {
-        randomPhrase.map((phrase) => (
+        phrases.map((phrase) => (
           <li>
             <span class="flex items-center gap-2 group hover:scale-120 transition-all duration-300">
               {phrase.emoji}
