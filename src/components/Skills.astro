@@ -14,7 +14,7 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
       Skills
     </h2>
     <div
-      class="bg-gradient-to-br from-yellow-700 via-orange-400 to-yellow-400 grid gap-6 py-5 px-5 rounded-xl shadow-xl text-center mx-auto border border-yellow-500"
+      class="bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 grid gap-6 py-5 px-5 rounded-xl shadow-xl text-center mx-auto border border-yellow-500"
     >
       {
         categorias.map((categoria) => {
@@ -28,16 +28,16 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
               </h3>
               <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 ">
                 {skillsPorCategoria.map((skill) => (
-                  <div class="rounded-lg shadow-lg p-3 flex flex-col items-center transition-all bg-white border border-yellow-400 hover:bg-yellow-100 hover:shadow-2xl hover:border-yellow-600 hover:-translate-y-2 hover:scale-105 duration-300 cursor-pointer group">
-                    <span class="text-xl font-semibold text-yellow-800 underline pb-2 group-hover:text-yellow-900 transition-colors duration-300">
+                  <div class="rounded-lg shadow-lg p-3 flex flex-col items-center transition-all bg-white border border-yellow-400 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 group duration-300">
+                    <span class="text-xl font-semibold text-yellow-800 group-hover:underline pb-2 group-hover:text-yellow-900 group-hover:font-bold transition-all duration-300 ">
                       {skill.name}
                     </span>
                     <Image
                       src={skill.logo}
                       alt={skill.name}
-                      class="w-32 h-32 aspect-square object-contain group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
+                      class="size-25 aspect-square object-contain group-hover:scale-110 group-hover:rotate-3 duration-300 transition-all"
                     />
-                    <span class="mt-2 text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors duration-300">
+                    <span class="mt-2 text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors ">
                       {skill.level}
                     </span>
                   </div>
