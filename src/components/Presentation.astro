@@ -8,14 +8,10 @@ const phrases = [
   { sentence: "Simulación de redes", emoji: "🖥️" },
   { sentence: "Gestión y modelado de Bases de Datos", emoji: "🗄️" },
   { sentence: "Asistencia en programas de Arquitectura y diseño", emoji: "🏛️" },
-  { sentence: "Optimización de procesos tecnológicos", emoji: "⚙️" },
   { sentence: "Desarrollo de aplicaciones web", emoji: "🌐" },
-  { sentence: "Implementación de sistemas de seguridad", emoji: "🔒" },
-  { sentence: "Análisis y diseño de sistemas", emoji: "📊" },
-  { sentence: "Automatización de tareas", emoji: "🤖" },
 ];
 
-const getRandomPhrases = (count = 4) => {
+const getRandomPhrases = (count = 5) => {
   const shuffled = [...phrases].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
@@ -29,10 +25,10 @@ setInterval(() => {
 
 <section class="py-16 bg-gradient-to-b from-[#0f2027] to-[#2c5364]">
   <div
-    class="max-w-5xl mx-auto mb-10 p-10 bg-red-800/90 rounded-3xl shadow-2xl shadow-red-900/80 text-center"
+    class="max-w-5xl mx-auto mb-10 p-10 bg-gradient-to-bl from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl text-center"
   >
     <h1
-      class="mb-4 text-5xl font-extrabold text-white bg-red-600/95 rounded-xl p-6 inline-block shadow-xl shadow-red-800/80 hover:bg-white hover:text-red-800 transition-all hover:shadow-2xl hover:shadow-red-400 hover:scale-110"
+      class="mb-4 text-5xl font-extrabold text-white bg-red-600/95 rounded-xl p-6 inline-block shadow-xl shadow-red-800/80 hover:bg-white hover:text-red-800 transition-all hover:shadow-2xl hover:shadow-red-400 hover:scale-110 duration-700"
     >
       ALEJANDRO DÍAZ OSORIO
     </h1>
@@ -42,7 +38,7 @@ setInterval(() => {
   </div>
 
   <div
-    class="grid md:grid-cols-2 gap-8 items-center justify-center max-w-5xl mx-auto p-10 bg-red-800/90 rounded-3xl shadow-2xl shadow-red-900/80"
+    class="grid md:grid-cols-2 gap-8 items-center justify-center max-w-5xl mx-auto p-10 bg-gradient-to-br from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl"
   >
     <a
       href="https://www.linkedin.com/in/alejandro-diaz-osorio/"
@@ -55,16 +51,18 @@ setInterval(() => {
         src={profile}
         alt="Foto de perfil de Alejandro Díaz Osorio"
         loading="eager"
-        class="w-52 h-52 rounded-full object-cover shadow-xl shadow-red-900 border-4 border-red-500 hover:scale-130 hover:shadow-2xl hover:shadow-red-400 hover:rotate-350 transition-all duration-700"
+        class="aspect-square size-52 rounded-full object-cover shadow-xl shadow-red-900 border-4 border-red-500 hover:scale-130 hover:shadow-2xl hover:shadow-red-400 hover:rotate-[-10deg] transition-all duration-700"
       />
     </a>
     <ul class="text-red-50 text-lg italic space-y-3 font-semibold text-left">
       {
         randomPhrase.map((phrase) => (
           <li>
-            <span class="flex items-center gap-2 hover:bg-transparent hover:text-shadow-2xl hover:shadow-red-400 hover:text-white hover:scale-110 transition-all rounded px-2 py-1">
+            <span class="flex items-center gap-2 group hover:text-gray-300 hover:scale-120 transition-all duration-200">
               {phrase.emoji}
-              {phrase.sentence}
+              <span class="group-hover:underline transition-all ">
+                {phrase.sentence}
+              </span>
             </span>
           </li>
         ))

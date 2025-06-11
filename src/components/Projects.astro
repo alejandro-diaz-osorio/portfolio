@@ -4,6 +4,7 @@ import { projects } from "../data/projects";
 ---
 
 <section
+  id="projects"
   class="py-12 bg-gradient-to-b to-[#0f2027] from-[#2c5364] flex flex-col items-center justify-center"
 >
   <div class="max-w-5xl mx-auto px-4 text-center">
@@ -21,7 +22,7 @@ import { projects } from "../data/projects";
             rel="noopener noreferrer"
             class="group bg-gradient-to-t from-blue-800 via-blue-400 to-blue-700 p-6 rounded-lg text-left hover:scale-108  hover:to-blue-800 hover:via-blue-400 hover:from-blue-700 transition-all duration-300"
           >
-            <div class="overflow-hidden rounded-md mb-4 border-3 border-gray-500">
+            <div class="rounded-md mb-4 border-3 border-gray-500">
               <Image
                 src={project.image}
                 alt={project.title}

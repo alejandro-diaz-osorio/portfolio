@@ -2,14 +2,14 @@
 const siteTitle = "Portfolio ADO";
 const navLinks = [
   { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/projects" },
-  { name: "Educación", href: "/education" },
-  { name: "Skills", href: "/skills" },
-  { name: "Sobre mi", href: "/about" },
+  { name: "Proyectos", href: "#projects" },
+  { name: "Educación", href: "#education" },
+  { name: "Skills", href: "#skills" },
+  { name: "Sobre mi", href: "#about" },
 ];
 ---
 
-<header class="bg-[#0f2027] shadow-md py-2">
+<header class="bg-[#0f2027] py-4">
   <div
     class="max-w-5xl mx-auto flex items-center justify-between px-8 flex-col gap-4 md:flex-row md:gap-0"
   >
@@ -25,7 +25,7 @@ const navLinks = [
             <li>
               <a
                 href={link.href}
-                class="text-white font-medium transition-colors duration-200 hover:text-[#43cea2]"
+                class="text-white font-medium transition-colors duration-200 hover:underline hover:text-[#43cea2]"
               >
                 {link.name}
               </a>
