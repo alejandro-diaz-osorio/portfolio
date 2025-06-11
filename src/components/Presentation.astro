@@ -28,13 +28,10 @@ setInterval(() => {
     class="max-w-5xl mx-auto mb-10 p-10 bg-gradient-to-bl from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl text-center"
   >
     <h1
-      class="mb-4 text-5xl font-extrabold text-white bg-red-600/95 rounded-xl p-6 inline-block shadow-xl shadow-red-800/80 hover:bg-white hover:text-red-800 transition-all hover:shadow-2xl hover:shadow-red-400 hover:scale-110 duration-700"
+      class="mb-4 text-5xl text-[#991b1b] bg-white font-extrabold animate-nametag tracking-wider rounded-xl p-6 inline-block shadow-xl shadow-red-800/80"
     >
       ALEJANDRO DÍAZ OSORIO
     </h1>
-    <p class="mb-6 text-xl font-semibold text-red-50 tracking-wide">
-      Ingeniero de Sistemas y Telecomunicaciones
-    </p>
   </div>
 
   <div
@@ -51,14 +48,14 @@ setInterval(() => {
         src={profile}
         alt="Foto de perfil de Alejandro Díaz Osorio"
         loading="eager"
-        class="aspect-square size-52 rounded-full object-cover shadow-xl shadow-red-900 border-4 border-red-500 hover:scale-130 hover:shadow-2xl hover:shadow-red-400 hover:rotate-[-10deg] transition-all duration-700"
+        class="aspect-square size-52 rounded-full object-cover animate-profile-picture"
       />
     </a>
     <ul class="text-red-50 text-lg italic space-y-3 font-semibold text-left">
       {
         randomPhrase.map((phrase) => (
           <li>
-            <span class="flex items-center gap-2 group hover:text-gray-300 hover:scale-120 transition-all duration-200">
+            <span class="flex items-center gap-2 group hover:scale-120 transition-all duration-300">
               {phrase.emoji}
               <span class="group-hover:underline transition-all ">
                 {phrase.sentence}
@@ -70,3 +67,63 @@ setInterval(() => {
     </ul>
   </div>
 </section>
+
+<style>
+  .animate-nametag:hover {
+    animation: nametag 5s ease-in-out infinite;
+  }
+
+  @keyframes nametag {
+    0% {
+      letter-spacing: 0.05em;
+      transform: scale(1) rotate(0deg);
+      box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
+    }
+    25% {
+      letter-spacing: 0.15em;
+      transform: scale(1.05) rotate(-2deg);
+      box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
+    }
+    50% {
+      letter-spacing: 0.25em;
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 16px 48px -8px rgba(220, 38, 38, 1);
+    }
+    75% {
+      letter-spacing: 0.15em;
+      transform: scale(1.05) rotate(-2deg);
+      box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
+    }
+    100% {
+      letter-spacing: 0.05em;
+      transform: scale(1) rotate(0deg);
+      box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
+    }
+  }
+
+  .animate-profile-picture:hover {
+    animation: profile-picture 5s ease-in-out infinite;
+  }
+  @keyframes profile-picture {
+    0% {
+      transform: rotate(0deg);
+      box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
+    }
+    25% {
+      transform: rotate(-20deg);
+      box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
+    }
+    50% {
+      transform: rotate(20deg);
+      box-shadow: 0 16px 48px -8px rgba(220, 38, 38, 1);
+    }
+    75% {
+      transform: rotate(-20deg);
+      box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
+    }
+    100% {
+      transform: rotate(10deg);
+      box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
+    }
+  }
+</style>
