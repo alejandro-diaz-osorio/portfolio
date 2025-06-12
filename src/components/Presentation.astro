@@ -26,27 +26,32 @@ const phrases = [
   <div
     class="grid md:grid-cols-2 gap-8 items-center justify-center max-w-5xl mx-auto p-10 bg-gradient-to-br from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl"
   >
-    <a
-      href="https://www.linkedin.com/in/alejandro-diaz-osorio/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex justify-center items-center"
-      aria-label="LinkedIn profile"
-    >
-      <Image
-        src={profile}
-        alt="Foto de perfil de Alejandro Díaz Osorio"
-        loading="eager"
-        class="aspect-square size-52 rounded-full object-cover animate-profile-picture"
-      />
-    </a>
+    <div class="flex flex-col items-center">
+      <a
+        href="https://www.linkedin.com/in/alejandro-diaz-osorio/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex justify-center items-center"
+        aria-label="LinkedIn profile"
+      >
+        <Image
+          src={profile}
+          alt="Foto de perfil de Alejandro Díaz Osorio"
+          loading="eager"
+          class="aspect-square size-52 rounded-full object-cover animate-profile-picture"
+        />
+      </a>
+      <p class="mt-4 text-red-50 text-sm uppercase text-center font-phrase text-shadow-2xs">
+        "Del fracaso se aprende... del éxito no mucho"
+      </p>
+    </div>
     <ul class="text-red-50 text-lg italic space-y-3 font-semibold text-left">
       {
         phrases.map((phrase) => (
           <li>
             <span class="flex items-center gap-2 group hover:scale-120 transition-all duration-300">
               {phrase.emoji}
-              <span class="group-hover:underline transition-all ">
+              <span class="group-hover:underline transition-all">
                 {phrase.sentence}
               </span>
             </span>
