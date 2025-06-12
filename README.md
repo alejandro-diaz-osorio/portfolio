@@ -15,7 +15,7 @@ Aquí encontrarás una selección de mis proyectos más relevantes, y un resumen
 
 ## 👤 Autor
 
-**Alejandro Díaz Osorio** | Desarrollador Web
+**Alejandro Díaz Osorio** | Ingeniero de Sistemas y Telecomunicaciones
 
 - 📧 [osoriodiazalejandro@gmail.com](mailto:osoriodiazalejandro@gmail.com)
 - 💼 [LinkedIn](https://www.linkedin.com/in/alejandro-diaz-osorio)
