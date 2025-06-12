@@ -16,7 +16,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/twinkle-star": "^5.2.6",
+    "@fontsource/sedgwick-ave": "^5.2.6",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.9.2",

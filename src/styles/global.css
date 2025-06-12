@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import "@fontsource/sedgwick-ave";
 @theme {
-  --font-phrases: "Twinkle Star", regular;
+  --font-phrase: "Sedgwick Ave", regular;
 }
