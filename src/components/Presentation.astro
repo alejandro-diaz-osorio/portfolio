@@ -38,10 +38,12 @@ const phrases = [
           src={profile}
           alt="Foto de perfil de Alejandro Díaz Osorio"
           loading="eager"
-          class="aspect-square size-52 rounded-full object-cover animate-profile-picture"
+          class="aspect-square size-52 rounded-full object-cover animate-profile-picture border-4 border-red-800"
         />
       </a>
-      <p class="mt-4 text-red-50 text-sm uppercase text-center font-phrase text-shadow-2xs">
+      <p
+        class="mt-4 text-red-50 text-sm uppercase text-center font-phrase text-shadow-2xs"
+      >
         "Del fracaso se aprende... del éxito no mucho"
       </p>
     </div>
@@ -100,23 +102,23 @@ const phrases = [
   }
   @keyframes profile-picture {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(0deg) scale(1);
       box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
     }
     25% {
-      transform: rotate(-20deg);
+      transform: rotate(-20deg) scale(1.05);
       box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
     }
     50% {
-      transform: rotate(20deg);
+      transform: rotate(20deg) scale(1.1);
       box-shadow: 0 16px 48px -8px rgba(220, 38, 38, 1);
     }
     75% {
-      transform: rotate(-20deg);
+      transform: rotate(-20deg) scale(1.05);
       box-shadow: 0 8px 32px -6px rgba(220, 38, 38, 0.9);
     }
     100% {
-      transform: rotate(10deg);
+      transform: rotate(0deg) scale(1);
       box-shadow: 0 4px 24px -3px rgba(220, 38, 38, 0.85);
     }
   }
