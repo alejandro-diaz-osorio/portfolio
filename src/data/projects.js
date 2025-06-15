@@ -7,21 +7,21 @@ export const projects = [
     title: "Alarma Antirrobo",
     description:
       "Proyecto universitario elaborado con Arduino y ESP32 con sensor HC-SR04.",
-    link: "https://github.com/alejandro-diaz-osorio/anti-theft-proximity-alarm",
+    link: "https://github.com/alejo-lives/anti-theft-proximity-alarm",
     image: AlarmaAntirrobo,
   },
   {
     title: "Sistema de Comunicación con Códigos Morse",
     description:
       "Proyecto universitario elaborado con Arduino y ESP32 para enviar mensajes en código Morse.",
-    link: "https://github.com/alejandro-diaz-osorio/code-morse-transmissor-and-receiver",
+    link: "https://github.com/alejo-lives/code-morse-transmissor-and-receiver",
     image: TxRxMorse,
   },
   {
     title: "Break Out",
     description:
       "Juego clásico Break Out desarrollado con HTML5, CSS3 y JavaScript puro sin librerías externas.",
-    link: "https://github.com/alejandro-diaz-osorio/BREAK-OUT.git",
+    link: "https://github.com/alejo-lives/BREAK-OUT.git",
     image: BreakOut,
   },
 ];
