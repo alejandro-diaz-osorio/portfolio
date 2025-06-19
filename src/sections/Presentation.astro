@@ -12,21 +12,21 @@ const phrases = [
 ];
 ---
 
-<section class="py-16 bg-gradient-to-b from-[#0f2027] to-[#2c5364]">
+<section class="py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-[#0f2027] to-[#2c5364] px-4 sm:px-6 lg:px-8">
   <div
-    class="max-w-5xl mx-auto mb-10 p-10 bg-gradient-to-bl from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl text-center"
+    class="max-w-5xl mx-auto mb-6 sm:mb-8 lg:mb-10 p-4 sm:p-6 lg:p-10 bg-gradient-to-bl from-red-800 via-red-500 to-red-800 rounded-2xl sm:rounded-3xl shadow-2xl text-center"
   >
     <h1
-      class="mb-4 text-5xl text-[#991b1b] bg-white font-extrabold animate-nametag tracking-wider rounded-xl p-6 inline-block shadow-xl shadow-red-800/80"
+      class="mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#991b1b] bg-white font-extrabold animate-nametag tracking-wider rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-6 inline-block shadow-xl shadow-red-800/80"
     >
       ALEJANDRO DÍAZ OSORIO
     </h1>
   </div>
 
   <div
-    class="grid md:grid-cols-2 gap-8 items-center justify-center max-w-5xl mx-auto p-10 bg-gradient-to-br from-red-800 via-red-500 to-red-800 rounded-3xl shadow-2xl"
+    class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center justify-center max-w-5xl mx-auto p-4 sm:p-6 lg:p-10 bg-gradient-to-br from-red-800 via-red-500 to-red-800 rounded-2xl sm:rounded-3xl shadow-2xl"
   >
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center order-2 lg:order-1">
       <a
         href="https://www.linkedin.com/in/alejandro-diaz-osorio/"
         target="_blank"
@@ -38,22 +38,22 @@ const phrases = [
           src={profile}
           alt="Foto de perfil de Alejandro Díaz Osorio"
           loading="eager"
-          class="aspect-square size-52 rounded-full object-cover object-top animate-profile-picture border-4 border-red-800"
+          class="aspect-square size-32 sm:size-40 md:size-48 lg:size-52 rounded-full object-cover object-top animate-profile-picture border-4 border-red-800"
         />
       </a>
       <p
-        class="mt-4 text-red-50 text-sm uppercase text-center font-phrase text-shadow-2xs"
+        class="mt-4 text-red-50 text-xs sm:text-sm uppercase text-center font-phrase text-shadow-2xs px-2"
       >
-        "Del fracaso se aprende... del éxito no mucho"
+        "Del fracaso se aprende... del éxito no mucho"
       </p>
     </div>
-    <ul class="text-red-50 text-lg italic space-y-3 font-semibold text-left">
+    <ul class="text-red-50 text-base sm:text-lg italic space-y-2 sm:space-y-3 font-semibold text-left order-1 lg:order-2">
       {
         phrases.map((phrase) => (
           <li>
             <span class="flex items-center gap-2 group hover:scale-120 transition-all duration-300">
-              {phrase.emoji}
-              <span class="group-hover:underline transition-all">
+              <span class="text-lg sm:text-xl">{phrase.emoji}</span>
+              <span class="group-hover:underline transition-all text-sm sm:text-base">
                 {phrase.sentence}
               </span>
             </span>

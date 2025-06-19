@@ -4,26 +4,26 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer
-  class="bg-gradient-to-b to-[#0f2027] from-[#2c5364] text-white py-5 shadow-2xl"
+  class="bg-gradient-to-b to-[#0f2027] from-[#2c5364] text-white py-4 sm:py-5 shadow-2xl px-4 sm:px-6 lg:px-8"
 >
   <div
-    class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 gap-6 md:gap-0"
+    class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 lg:gap-0"
   >
-    <div class="flex items-center space-x-3">
+    <div class="flex items-center space-x-2 sm:space-x-3">
       <Icon
         name="mdi:star-four-points"
-        class="w-8 h-8 text-[#43cea2] animate-spin-slow"
+        class="w-6 h-6 sm:w-8 sm:h-8 text-[#43cea2] animate-spin-slow"
       />
       <span
-        class="font-extrabold text-xl tracking-wide bg-gradient-to-r from-[#43cea2] to-[#185a9d] bg-clip-text text-transparent"
+        class="font-extrabold text-lg sm:text-xl tracking-wide bg-gradient-to-r from-[#43cea2] to-[#185a9d] bg-clip-text text-transparent"
       >
         Alejandro Díaz Osorio
       </span>
-      <span class="text-sm text-gray-400">
+      <span class="text-xs sm:text-sm text-gray-400">
         &copy; {currentYear}
       </span>
     </div>
-    <div class="flex space-x-6">
+    <div class="flex space-x-4 sm:space-x-6">
       <a
         href="https://github.com/alejo-lives"
         class="hover:text-[#43cea2] transition-colors"
@@ -31,14 +31,14 @@ import { Icon } from "astro-icon/components";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="mdi:github" class="w-7 h-7" />
+        <Icon name="mdi:github" class="w-6 h-6 sm:w-7 sm:h-7" />
       </a>
       <a
         href="mailto:osoriodiazalejandro@gmail.com"
         class="hover:text-[#43cea2] transition-colors"
         aria-label="Email"
       >
-        <Icon name="mdi:email" class="w-7 h-7" />
+        <Icon name="mdi:email" class="w-6 h-6 sm:w-7 sm:h-7" />
       </a>
       <a
         href="https://linkedin.com/in/alejandro-diaz-osorio"
@@ -47,7 +47,7 @@ import { Icon } from "astro-icon/components";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="mdi:linkedin" class="w-7 h-7" />
+        <Icon name="mdi:linkedin" class="w-6 h-6 sm:w-7 sm:h-7" />
       </a>
     </div>
   </div>

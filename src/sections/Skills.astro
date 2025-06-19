@@ -6,15 +6,15 @@ import { skills } from "../data/skills";
 const categorias = [...new Set(skills.map((skill) => skill.categoria))];
 ---
 
-<section id="skills" class="py-12 bg-gradient-to-b to-[#0f2027] from-[#2c5364]">
-  <div class="mx-auto px-4 max-w-5xl text-center">
+<section id="skills" class="py-8 sm:py-12 bg-gradient-to-b to-[#0f2027] from-[#2c5364] px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-5xl text-center">
     <h2
-      class="mb-8 text-4xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 text-yellow-900 rounded-lg p-4 inline-block shadow-lg border-4 border-yellow-700"
+      class="mb-6 sm:mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 text-yellow-900 rounded-lg p-3 sm:p-4 inline-block shadow-lg border-4 border-yellow-700"
     >
       Skills
     </h2>
     <div
-      class="bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 grid gap-6 py-5 px-5 rounded-xl shadow-xl text-center mx-auto border border-yellow-500"
+      class="bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 grid gap-4 sm:gap-6 py-4 sm:py-5 px-3 sm:px-5 rounded-xl shadow-xl text-center mx-auto border border-yellow-500"
     >
       {
         categorias.map((categoria) => {
@@ -22,22 +22,22 @@ const categorias = [...new Set(skills.map((skill) => skill.categoria))];
             (skill) => skill.categoria === categoria
           );
           return (
-            <div class="mb-12">
-              <h3 class="text-2xl font-bold text-yellow-900 bg-yellow-200 px-4 py-2 rounded shadow inline-block mb-6 border-l-8 border-yellow-600">
+            <div class="mb-8 sm:mb-12">
+              <h3 class="text-xl sm:text-2xl font-bold text-yellow-900 bg-yellow-200 px-3 sm:px-4 py-2 rounded shadow inline-block mb-4 sm:mb-6 border-l-8 border-yellow-600">
                 {categoria.charAt(0).toUpperCase() + categoria.slice(1)}
               </h3>
-              <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {skillsPorCategoria.map((skill) => (
                   <div class="rounded-lg shadow-lg p-3 flex flex-col items-center transition-all bg-gradient-to-br from-yellow-200 via-orange-100 to-yellow-200 hover:bg-gradient-to-bl hover:from-yellow-200 hover:via-orange-100 hover:to-yellow-200 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 group duration-300">
-                    <span class="text-xl font-semibold text-yellow-800 group-hover:underline pb-2 group-hover:text-yellow-900 group-hover:font-bold transition-all duration-300 ">
+                    <span class="text-lg sm:text-xl font-semibold text-yellow-800 group-hover:underline pb-2 group-hover:text-yellow-900 group-hover:font-bold transition-all duration-300 text-center">
                       {skill.name}
                     </span>
                     <Image
                       src={skill.logo}
                       alt={skill.name}
-                      class="size-25 aspect-square object-contain group-hover:scale-110 group-hover:rotate-3 duration-300 transition-all"
+                      class="size-16 sm:size-20 lg:size-25 aspect-square object-contain group-hover:scale-110 group-hover:rotate-3 duration-300 transition-all"
                     />
-                    <span class="mt-2 text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors ">
+                    <span class="mt-2 text-xs sm:text-sm text-yellow-700 font-bold group-hover:text-yellow-900 transition-colors">
                       {skill.level}
                     </span>
                   </div>
