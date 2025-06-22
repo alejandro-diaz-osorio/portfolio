@@ -3,7 +3,7 @@
 ---
 
 ¡Bienvenido a mi portafolio personal!  
-Aquí encontrarás una selección de mis proyectos más relevantes, y un resumen de mis habilidades técnicas.
+Aquí encontrarás una selección de mis proyectos, y un resumen de mis habilidades técnicas.
 
 ---
 
