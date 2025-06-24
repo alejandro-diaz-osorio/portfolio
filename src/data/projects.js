@@ -1,5 +1,5 @@
 import AlarmaAntirrobo from "../assets/projects/AlarmaAntirrobo.webp";
-import TxRxMorse from "../assets/projects/Tx&RxMorse.webp"
+import TxRxMorse from "../assets/projects/Tx&RxMorse.webp";
 import BreakOut from "../assets/projects/break_out.webp";
 import DataCRIPT from "../assets/projects/datacript.webp";
 import Hora_Hispana from "../assets/projects/hora_hispana.webp";
