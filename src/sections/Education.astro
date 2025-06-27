@@ -1,5 +1,5 @@
 ---
-import { education } from "../data/education.js";
+import { education } from "../data/education.js"
 ---
 
 <section
@@ -16,10 +16,24 @@ import { education } from "../data/education.js";
       {
         education.map((edu) => (
           <li class="bg-gradient-to-r from-purple-800 via-fuchsia-800 to-indigo-800 p-4 sm:p-6 rounded-lg text-left shadow-lg hover:scale-105 transition-all hover:from-fuchsia-700 hover:via-purple-700 hover:to-indigo-700">
-            <h3 class="text-lg sm:text-xl font-semibold text-fuchsia-300 mb-2">{edu.degree}</h3>
-            <p class="text-indigo-100 text-sm sm:text-base mb-1">{edu.school}</p>
-            <span class="text-xs sm:text-sm text-purple-200 block mb-2">{edu.period}</span>
-            <p class="mt-2 text-purple-100 text-sm sm:text-base">{edu.description}</p>
+            <a
+              href={edu.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="text-lg sm:text-xl font-semibold text-fuchsia-300 mb-2">
+                {edu.degree}
+              </h3>
+              <p class="text-indigo-100 text-sm sm:text-base mb-1">
+                {edu.school}
+              </p>
+              <span class="text-xs sm:text-sm text-purple-200 block mb-2">
+                {edu.period}
+              </span>
+              <p class="mt-2 text-purple-100 text-sm sm:text-base">
+                {edu.description}
+              </p>
+            </a>
           </li>
         ))
       }
