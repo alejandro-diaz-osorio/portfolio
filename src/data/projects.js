@@ -3,6 +3,7 @@ import TxRxMorse from "../assets/projects/Tx&RxMorse.webp";
 import BreakOut from "../assets/projects/break_out.webp";
 import DataCRIPT from "../assets/projects/datacript.webp";
 import Hora_Hispana from "../assets/projects/hora_hispana.webp";
+import MorseSignales from "../assets/projects/morse_signalis.webp"
 
 export const projects = [
   {
@@ -21,7 +22,7 @@ export const projects = [
   {
     title: "DATA.CRIPT",
     description:
-    "Aplicación web para encriptar y desencriptar mensajes usando una clave personalizada.",
+      "Aplicación web para encriptar y desencriptar mensajes usando una clave personalizada.",
     github: "https://github.com/alejandro-diaz-osorio/datacript",
     demo: "https://datacript.netlify.app/",
     image: DataCRIPT,
@@ -29,10 +30,18 @@ export const projects = [
   {
     title: "HORA HISPANA",
     description:
-    "Aplicación web simple para visualizar la hora en diferentes países de habla hispana a partir de una fecha y hora seleccionada.",
+      "Aplicación web simple para visualizar la hora en diferentes países de habla hispana a partir de una fecha y hora seleccionada.",
     github: "https://github.com/alejandro-diaz-osorio/Hora-Hispana",
     demo: "https://horahispana.netlify.app/",
     image: Hora_Hispana,
+  },
+  {
+    title: "MORSE SIGNALIS",
+    description:
+      "Aplicación web para traducir texto a código Morse y viceversa con un diseño inspirado en telégrafos retro.",
+    github: "https://github.com/alejandro-diaz-osorio/morse-signalis",
+    demo: "https://morsesignalis.netlify.app/",
+    image: MorseSignales,
   },
   {
     title: "BREAK-OUT",
